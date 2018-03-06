@@ -1,0 +1,4 @@
+Maverick:
+Sequential: 6.075399e-01
+GPU: 2.846003e-03
+Speedup: 213.4712788 times or 21347.12% faster
