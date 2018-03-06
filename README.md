@@ -1,4 +1,4 @@
-# GPU-research-FFT-OpenACC-CUDA 
+# Performance and Efficiency Comparison between OpenACC and CUDA including Fast Fourier Transform implementations
 
 A performance analysis of the implementation of Cooley-Turkey algorithm in order to solve radix-2 Fast Fourier Transform problem using sequential code and parallel code in OpenACC and CUDA. The performance between the 3 methods is analyzed, especially between openACC and CUDA to determine the efficiency of openACC code compared to low level optimized CUDA code.
 
