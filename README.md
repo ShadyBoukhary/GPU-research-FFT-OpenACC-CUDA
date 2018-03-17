@@ -55,13 +55,14 @@ Run the installation script and follow on-screen instructions.
 $ sudo ./install
 ```
 
-Make PGI products accessible.
+Make PGI products accessible. In the terminal:
+***NOTE: the directory with the version number 17.10 may vary according to your installation. Verify that it is correct or change accordingly***
 
 ```
-$ export PGI=/opt/pgi;
-$ export PATH=/opt/pgi/linux86-64/17.4/bin:$PATH;
-$ export MANPATH=$MANPATH:/opt/pgi/linux86-64/17.4/man;
-$ export LM_LICENSE_FILE=$LM_LICENSE_FILE:/opt/pgi/license.dat; 
+export PGI=/opt/pgi;
+export PATH=/opt/pgi/linux86-64/17.10/bin:$PATH;
+export MANPATH=$MANPATH:/opt/pgi/linux86-64/17.10/man;
+export LM_LICENSE_FILE=$LM_LICENSE_FILE:/opt/pgi/license.dat; 
 ```
 
 That should be it for the community version.
