@@ -47,7 +47,6 @@ int main()
 	elapsed = stop - start;
 	printFFT(fft, SIZE);
 	printf("Code to be timed took %e seconds.\n", elapsed);
-	//getchar();
 
 }
 
@@ -79,7 +78,6 @@ double _Complex * computeFFT(double _Complex * numbers, int N) {
 	// indicate a parallel loop
     #pragma acc loop independent
 	// compute all X(K)
-	//#pragma acc kernels
 
 	for (int k = 0; k < N; k++) {
 		double _Complex sumEven = 0.0 + 0.0 * I;
