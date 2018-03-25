@@ -18,7 +18,7 @@
 #include "timer.h"
 
 #define PI 3.14159265
-#define SIZE 8192
+#define SIZE 1048576
 
 double _Complex * computeFFT(double _Complex *, int);
 
@@ -75,16 +75,17 @@ double _Complex * computeFFT(double _Complex * numbers, int N) {
 	// copy the energies array back to host when done
 	#pragma acc data copyin(numbers[0:N],X[0:N]) copyout(X[0:N])
 	// declare a parallel region
-	//#pragma acc region
+	#pragma acc region
 	// indicate a parallel loop
-    //#pragma acc parallel loop independent
+    #pragma acc loop independent
 	// compute all X(K)
-	#pragma acc kernels
+	//#pragma acc kernels
 
 	for (int k = 0; k < N; k++) {
 		double _Complex sumEven = 0.0 + 0.0 * I;
 		double _Complex sumOdd = 0.0 + 0.0 * I;
-		//#pragma acc loop vector(1024)
+		#pragma acc cache(numbers[0:1024])
+		#pragma acc loop independent
 		for (int n = 0; n <= (N / 2) - 1; n++) {
 			// compute the even part
 
