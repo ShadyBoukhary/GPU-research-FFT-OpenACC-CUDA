@@ -4,6 +4,11 @@ A performance analysis of the implementation of Cooley-Turkey algorithm in order
 
 Project starts off with smaller tests between the different methods.
 
+## Results
+
+* [Radix-2 FFT Sequential VS OpenACC VS CUDA Global Memory VS CUDA Shared Memory](Week%205/FFT%20Seq%20vs%20OpenACC%20vs%20GM%20vs%20SM.pdf)
+* [Matrix Multiplication Sequential VS OpenACC VS CUDA Global Memory VS CUDA Shared Memory](Week%205/Matrix%20Mult.%20Seq%20vs%20OpenACC%20vs%20Cuda.pdf)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -19,7 +24,7 @@ OpenACC PGI Compiler
 PGI Account
 ```
 
-### Installing (Adapted from http://www.pgroup.com/doc/pgiinstall174.pdf)
+### Installing [Adapted from here](http://www.pgroup.com/doc/pgiinstall174.pdf)
 
 #### Linux
 
@@ -92,4 +97,8 @@ That should be it for the community version.
 
 
 ## References
-
+* [OpenACC Programming Guide](http://www.openacc.org/sites/default/files/inline-files/OpenACC_Programming_Guide_0.pdf)
+* [Running OpenACC Programs on Nvidia and AMD GPUs](https://www.pgroup.com/lit/presentations/ieee_webinar_dec2013_slides.pdf)
+* [Getting Started with OpenACC](https://www.pgroup.com/doc/openacc17_gs.pdf)
+* [OpenACC Compiler Directives](https://www.pgroup.com/lit/brochures/openacc_sc14.pdf)
+* [OpenACC Full Installation Guide](http://www.pgroup.com/doc/pgiinstall174.pdf)
