@@ -8,7 +8,7 @@
 *   Computes a radix-2 fast fourier transform using an iterative implementation of
 *	the Cooley-Tukey Algorithm. This code uses OpenACC to parallelize loops
 *
-*	To compile: pgcc -acc -Minfo -o main  FFT_OpenACC.c
+*	To compile: pgcc -acc -ta=tesla:cc60 -Minfo=accel -o main FFT_OpenACC.c
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+*/
 
 #include <stdio.h>
