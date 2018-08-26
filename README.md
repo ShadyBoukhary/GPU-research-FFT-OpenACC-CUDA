@@ -1,6 +1,6 @@
-# Evaluating the Benefits of Many-Core Programming Models: A Case Study
+# Evaluating the Benefits of Many-Core Programming Models Using Scientific Kernels: A Case Study
 
-A performance analysis of the implementation of Cooley-Turkey algorithm in order to solve radix-2 Fast Fourier Transform problem using sequential code and parallel code in OpenACC and CUDA. The performance between the 3 methods is analyzed, especially between openACC and CUDA to determine the efficiency of openACC code compared to low level optimized CUDA code.
+Case studies constitute a modern interdisciplinary and valuable teaching practice which plays a critical and fundamental role in the development of new skills and the formation of new knowledge. This research studies the behavior and performance of two interdisciplinary and widely adopted scientific kernels, a Fast Fourier Transform and Matrix Multiplication. Both routines are implemented in the two current most popular many-core programming models CUDA and OpenACC. A Fast Fourier Transform (FFT) samples a signal over a period of time and divides it into its frequency components, computing the Discrete Fourier Transform (DFT) of a sequence. Unlike the traditional approach to computing a DFT, FFT algorithms reduce the complexity of the problem from O(n2) to O(nLog2n).  Matrix multiplication is a cornerstone routine in Mathematics, Artificial Intelligence and Machine Learning. This research also shows that the nature of the problem plays a crucial role in determining what many-core model will provide the highest benefit in performance. 
 
 Project starts off with smaller tests between the different methods.
 
